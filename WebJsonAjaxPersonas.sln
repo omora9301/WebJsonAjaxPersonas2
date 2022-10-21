@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJsonAjaxPersonas", "WebJsonAjaxPersonas\WebJsonAjaxPersonas.csproj", "{D9785547-BF87-4F17-B61B-1C51ECB294FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.UI", "1.UI", "{8F0DC567-9674-4713-8129-C4CD55343AA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.DATA", "3.DATA", "{9BB0A163-94BC-4587-8E59-FF2E6DAECE84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.BUSINESS", "2.BUSINESS", "{665E52D1-6584-4AA5-A98C-9F8535FA5CA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDataPersonas", "AppDataPersonas\AppDataPersonas.csproj", "{8C1D8DA3-E30D-4A49-A7DF-60DF76D5EE9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityPersonas", "EntityPersonas\EntityPersonas.csproj", "{87B45841-6CDA-4217-B74E-4084CAC70A4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppBussPersona", "AppBussPersona\AppBussPersona.csproj", "{C206F5A5-750A-4C3E-8A15-4BD16A9E6BBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9785547-BF87-4F17-B61B-1C51ECB294FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9785547-BF87-4F17-B61B-1C51ECB294FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9785547-BF87-4F17-B61B-1C51ECB294FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9785547-BF87-4F17-B61B-1C51ECB294FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C1D8DA3-E30D-4A49-A7DF-60DF76D5EE9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C1D8DA3-E30D-4A49-A7DF-60DF76D5EE9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C1D8DA3-E30D-4A49-A7DF-60DF76D5EE9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C1D8DA3-E30D-4A49-A7DF-60DF76D5EE9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B45841-6CDA-4217-B74E-4084CAC70A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B45841-6CDA-4217-B74E-4084CAC70A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B45841-6CDA-4217-B74E-4084CAC70A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B45841-6CDA-4217-B74E-4084CAC70A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C206F5A5-750A-4C3E-8A15-4BD16A9E6BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C206F5A5-750A-4C3E-8A15-4BD16A9E6BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C206F5A5-750A-4C3E-8A15-4BD16A9E6BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C206F5A5-750A-4C3E-8A15-4BD16A9E6BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9785547-BF87-4F17-B61B-1C51ECB294FA} = {8F0DC567-9674-4713-8129-C4CD55343AA4}
+		{8C1D8DA3-E30D-4A49-A7DF-60DF76D5EE9A} = {9BB0A163-94BC-4587-8E59-FF2E6DAECE84}
+		{87B45841-6CDA-4217-B74E-4084CAC70A4B} = {665E52D1-6584-4AA5-A98C-9F8535FA5CA9}
+		{C206F5A5-750A-4C3E-8A15-4BD16A9E6BBE} = {665E52D1-6584-4AA5-A98C-9F8535FA5CA9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9AEB78C-AB88-4044-B633-FA34FEBFD71A}
+	EndGlobalSection
+EndGlobal

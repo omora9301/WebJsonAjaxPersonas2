@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/modernizr-2.8.3.js"></script>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Paterno</th>
+            <th>Materno</th>
+            <th>Edad</th>
+            <th>FechaRegistro</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </tr>
+    </thead>
+    <tbody id="info">
+        
+    </tbody>
+</table>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+        ObtenerInfoTabla();
+    });
+
+    function ObtenerInfoTabla() {
+        jQuery.ajax({
+            type: 'Get',
+            url: '/Home/Obtener',
+            contenType: 'aplication/json; charset=utf-8',
+            success: function (respuesta) {//Objetos que existan en el jason
+
+                if (respuesta.mensaje == 'OK') {
+                }
+                else {
+                    alert(respuesta.mensaje);
+                }
+
+
+            },
+            error: function (objXMLHttpRequest) {
+                alert(objXMLHttpRequest);
+            }
+        });
+    }
+
+    function LlenarTabla(infoTabla) {
+        debugger;
+        var f = '';
+        $.each(infoTabla, function (i, element) {
+
+            f += '<tr>';
+
+            f += '<td>';
+            f += element.Nombre;
+            f += '<td>';
+
+            f += '<td>';
+            f += element.Paterno;
+            f += '<td>';
+
+            f += '<td>';
+            f += element.Materno;
+            f += '<td>';
+
+            f += '<td>';
+            f += element.Edad;
+            f += '<td>';
+
+            f += '<td>';
+            f += element.FechaRegistro;
+            f += '<td>';
+
+            f += '</tr>';
+        })
+
+        $("#info").empty();
+        $("#info").html();
+    }
+
+</script>
